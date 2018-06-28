@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "webpack-dev-server --progress --display-error-details"
+    "build": "webpack --progress --display-error-details --watch",
+    "serve": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",

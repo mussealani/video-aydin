@@ -7,12 +7,15 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   devServer: {
-    contentBase: path.join(__dirname, '/'),
+    contentBase: path.join(__dirname),
+    historyApiFallback: true,
+    publicPath: '/',
     compress: true,
-    port: 8000
+    port: 8080
   },
   resolve: {
     alias: {
