@@ -1,4 +1,4 @@
-# Exlude various other files
+# Exlude various other files.
 .DS_Store
 .idea
 /node_modules
